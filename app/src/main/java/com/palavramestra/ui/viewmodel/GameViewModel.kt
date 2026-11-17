@@ -19,6 +19,8 @@ class GameViewModel(
     private val _uiState = MutableStateFlow(GameUiState())
     val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
 
+    private var gameStartedAt = 0L
+
     init {
         viewModelScope.launch {
             rankingRepository.getAllRanking().collect { ranking ->
@@ -37,6 +39,7 @@ class GameViewModel(
                     _uiState.update { it.copy(isLoading = false, error = "Nenhuma palavra encontrada para esta dificuldade.") }
                     return@launch
                 }
+                gameStartedAt = System.currentTimeMillis()
                 _uiState.update {
                     it.copy(
                         currentWord = word.word,
@@ -99,7 +102,12 @@ class GameViewModel(
         }
 
         if (newGameState == GameState.WON) {
-            saveResult(current.playerName, newScore, current.maxAttempts - newAttemptsLeft)
+            val elapsedSeconds = if (gameStartedAt > 0L) {
+                ((System.currentTimeMillis() - gameStartedAt) / 1000L).toInt().coerceAtLeast(1)
+            } else {
+                0
+            }
+            saveResult(current.playerName, newScore, elapsedSeconds)
         }
     }
 
