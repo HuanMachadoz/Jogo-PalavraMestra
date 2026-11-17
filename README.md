@@ -69,4 +69,18 @@ Para gerar o APK de debug, na pasta do projeto:
 gradlew.bat assembleDebug
 ```
 
-O arquivo fica em `app/build/outputs/apk/debug/app-debug.apk`.
+O arquivo fica em `app/build/outputs/apk/debug/app-debug.apk`. 
+
+<img width="456" height="726" alt="image" src="https://github.com/user-attachments/assets/6f4b165d-0056-45c4-b7bd-b5b5ab03eddb" /> 
+
+<img width="449" height="599" alt="image" src="https://github.com/user-attachments/assets/d0e3f6f4-8677-47ca-9771-1e30691998b2" />
+
+<img width="453" height="635" alt="image" src="https://github.com/user-attachments/assets/bf243bef-5fcd-4886-9bd5-27f0c76f9699" />
+
+<img width="445" height="867" alt="image" src="https://github.com/user-attachments/assets/bc6c51d7-97f7-4ce3-b1bc-a3d799d7eb51" />
+
+ <img width="455" height="859" alt="image" src="https://github.com/user-attachments/assets/4df8486d-346a-4692-9666-f93b7d86114a" />
+
+ <img width="457" height="561" alt="image" src="https://github.com/user-attachments/assets/eb810d46-dfe4-4711-93c3-d9686de1b48e" />
+
+[ ](https://youtube.com/shorts/RVltLvRZHUY?feature=share)
