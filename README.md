@@ -2,7 +2,9 @@
 
 Jogo da forca para Android. O jogador escolhe a dificuldade, tenta adivinhar a palavra e a pontuação fica salva no ranking. O administrador entra com senha e gerencia as palavras do jogo.
 
-Feito em Kotlin com Jetpack Compose e arquitetura MVVM. Os dados locais ficam no Room. A busca de palavras na internet usa Retrofit.
+Feito em Kotlin com Jetpack Compose e arquitetura MVVM. Os dados locais ficam no Room. A busca de palavras na internet usa Retrofit. 
+
+Feito por: Huan Machado, Felipe Gabriel da Silva
 
 ## Como jogar
 
